@@ -40,13 +40,13 @@ export class EditorDivComponent implements OnInit {
         });
         
         myZone.run(()=>{
-          console.log("jh");
-          document.getElementById("button").addEventListener("click",a1);
+          
+          document.getElementById("app-editDiv").addEventListener("click",a1);
     
         });
 
         function a1(){
-            console.log("in a1");
+            console.log("div called");
         }
   }
 

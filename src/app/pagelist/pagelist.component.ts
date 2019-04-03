@@ -10,20 +10,20 @@ import { EditorDivComponent } from '../editor-div/editor-div.component';
 })
 export class PageListComponent implements OnInit {
 
-  constructor(private domEditorService:DomEditorService){}
+  constructor(private domEditorService:DomEditorService,private editorDiv:EditorDivComponent){}
   ngOnInit() {
   }
 
   onButtonElementSelect() {
     var button=this.domEditorService.createButton();
     $("#app-editDiv").append(button);
-    var divObj=new EditorDivComponent();
-    divObj.zoneAction();
+    this.editorDiv.zoneAction();
  }
 
  onTextElementSelect(){
    var text= this.domEditorService.createInputText();
    $("#app-editDiv").append(text);
+   this.editorDiv.zoneAction();
 
  }
 

@@ -29,7 +29,7 @@ import { EditorDivComponent } from './editor-div/editor-div.component';
     FormsModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [EditorDivComponent],
   bootstrap: [AppComponent,HeaderComponent,PageListComponent,PropertyBoxComponent,FooterComponent,EditorDivComponent]
 })
 export class AppModule { }

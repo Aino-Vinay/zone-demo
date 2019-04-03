@@ -26,6 +26,7 @@ export class DomEditorService {
   
   createButton(): any {
     var button = $('<input/>').attr({ type: 'button', name: 'btn1', value: 'button', id: 'button' });
+    $(button).on('click',function(){console.log("Button Clicked")});
     return button;
   }
 
@@ -37,6 +38,7 @@ export class DomEditorService {
   
   createInputText(): any {
     var text = $('<input/>').attr({ text: 'text', name: '', placeholder: 'type here', id: 'text' });
+    $(text).on('change',function(){console.log("Text Box Value Changed")});
     return text;
   }
 

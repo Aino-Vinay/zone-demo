@@ -1,0 +1,33 @@
+.app-header { grid-area: header; }
+
+.previewButton{
+    right: 9px;
+    position: absolute;
+}
+.selector-div{
+    height: auto;
+    position: absolute;
+    width: 190px;
+    
+    border: solid 1px ;
+}
+.selector{
+    position: absolute;
+}
+.option:hover{
+   
+    background-color: aliceblue;
+}
+.addPage{
+    position: absolute;
+    top: 1px;
+    right: -15px;
+}
+.Sub{
+    position: absolute;
+    top: -7px;
+   
+}
+.addInput{
+    width: 186px;
+}

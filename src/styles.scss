@@ -1,0 +1,30 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.app-header { grid-area: header; }
+.app-pageList { grid-area: menu;
+  width: 98px;
+   }
+
+.app-propertybox { grid-area: right; }
+.app-footer { grid-area: footer; height:50px;
+  width:10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  grid-gap: 2px;
+  background-color: #2196F3;
+  padding: 2px;
+  height:763px;
+}
+
+.grid-container > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 2px;
+  font-size: 30px;
+}
+

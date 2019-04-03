@@ -1,0 +1,13 @@
+<header class="app-header">
+
+<div class="selector-div">
+    <mat-select class="selectOption" [(ngModel)]="selected" [(value)]="selected" (ngModelChange)="onDivSelect($event)">
+    <mat-option value="app-editDiv">Main-Div</mat-option>
+    <mat-option *ngFor="let page of pageList" value="{{page}}">{{page}}</mat-option>
+    </mat-select>
+    <input matInput placeholder="Add Page" class="addInput" id="addInput" style="display: none" [(ngModel)]="txtvalue">
+    <button mat-button class="Sub" name="button" style="display: none" (click)="addPageToSelect()">Submit</button>
+    <div class="addPage" (click)="onDivAdd()">+</div>
+    </div>
+    <button mat-button class="previewButton" (click)="appPreview('app-editDiv')">Preview</button>
+</header>
